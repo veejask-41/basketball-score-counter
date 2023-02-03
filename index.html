@@ -1,0 +1,41 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>SCORE BOARD</h1>
+            <div class="container-score">
+                <div class="main" id="home">
+                    <h3>HOME</h3>
+                    <div class="score-container" id="home-score-container">
+                        <p class="score" id="home-score"></p>
+                    </div>
+                    <div class="score-buttons"  id="home-buttons">
+                        <button class="score-button" id="home-score-1" onclick="addScore(0 , 1)">+1</button>
+                        <button class="score-button" id="home-score-2" onclick="addScore(0 , 2)">+2</button>
+                        <button class="score-button" id="home-score-3" onclick="addScore(0 , 3)">+3</button>
+                    </div>
+                </div>
+                <div class="main" id="guest">
+                    <h3>GUEST</h3>
+                    <div class="score-container" id="guest-score-container">
+                        <p class="score" id="guest-score"></p>                    
+                    </div>
+                    <div class="score-buttons"  id="guest-buttons">
+                        <button class="score-button" id="guest-score-1" onclick="addScore(1 , 1)">+1</button>
+                        <button class="score-button" id="guest-score-2" onclick="addScore(1 , 2)">+2</button>
+                        <button class="score-button" id="guest-score-3" onclick="addScore(1 , 3)">+3</button>
+                    </div>
+                </div>
+            </div>
+            <div class="additional-buttons">
+                <button id="new-game-btn" onclick="resetScore()">NEW GAME</button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

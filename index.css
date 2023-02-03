@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    background-color: bisque;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    background-color: #1B244A;
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: white solid 5px;
+    box-shadow: 0 0 5px black;
+    text-align: center;
+}
+
+h1{
+    margin: -10px auto 10px auto;
+    color: white;
+    font-family: 'Roboto Mono', monospace; 
+}
+
+.container-score{
+    display: flex;
+    justify-content: space-around;
+}
+.main{
+    text-align: center;
+    display: block;
+    padding: 15px;
+    border: solid white;
+    border-radius: 10px;
+    font-family: 'Roboto Mono', monospace;
+    width: 130px;
+    min-width: 130px;
+    margin: 0 10px;
+}
+
+h3 {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+}
+.score-container {
+    width: 90%;
+    height: 100px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #F94F6D;   
+    border-radius: 10px;
+}
+
+.score {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.main button {
+    background-color: transparent;
+    color: white;
+    border: white solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main button:hover{
+    border-color: red;
+}
+
+.additional-buttons button{
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 10px auto -10px auto;
+    font-family: 'Roboto Mono', monospace;    
+    font-weight: 700;
+    font-size: 20px;
+    width: 100%;
+}
+
+#new-game-btn {
+    background-color: lightgreen;
+}
+
+.additional-buttons button:hover{
+    box-shadow: 0 0 5px white;
+}
